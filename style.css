@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+}
+
+body {
+    min-width: 350px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+    width: 770px;
+    height: 100vh;
+}
+
+.phoneShow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phoneShow img {
+    height:100%;
+}
+
+.imageDiv
+{
+    position: relative;
+    width: 250px;
+    height: 541px;
+}
+
+.imageShow, .imageShow1, .imageShow2, .imageShow3
+{   
+    position: absolute;
+    top: -22px;
+    left: -308px;
+
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.imageShow
+{
+    animation-name: changeImg;
+}
+
+.imageShow1
+{
+    animation-name: changeImg1;
+}
+
+.imageShow2
+{
+    animation-name: changeImg2;
+}
+
+.imageShow3
+{
+    animation-name: changeImg3;
+}
+
+@keyframes changeImg {
+    87.5%  {opacity: 0}
+    100%  {opacity: 1}
+    0%  {opacity: 1}
+    12.5%  {opacity: 1}
+    25%  {opacity: 0}
+}
+
+@keyframes changeImg1 {
+    12.5%  {opacity: 0}
+    25%  {opacity: 1}
+    37.5%  {opacity: 1}
+    50%  {opacity: 0}
+}
+
+@keyframes changeImg2 {
+    37.5%  {opacity: 0}
+    50%  {opacity: 1}
+    62.5%  {opacity: 1}
+    75%  {opacity: 0}
+  }
+
+@keyframes changeImg3 {
+    62.5%  {opacity: 0}
+    75%  {opacity: 1}
+    87.5%  {opacity: 1}
+    100%  {opacity: 0}
+  }
+
+
+
+.loginContainer {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 55%;
+    height: 635px;
+    margin-left: 30px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1px solid lightgray;
+    z-index: 0;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 66px;
+    margin: 25px 0px;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.login
+{
+    width: 85%;
+}
+
+.instagram-loginButton{
+
+    background-color: #0095f6;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 14px;
+
+    opacity: 0.4;
+    border: none;
+
+    border-radius: 4px;
+    width: 85%;
+    padding: 7px 10px;
+    margin: 10px 7.5%;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+::placeholder {
+    color: rgb(142, 142, 142);
+    
+    padding: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+.loginInput
+{
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+
+    width: 85%;
+    padding: 11px 5px;
+    margin: 3px 7.5%;
+}
+
+.orDiv
+{
+    text-align: center;
+    margin: 10px auto;
+    width: 85%;
+}
+
+.orLine
+{
+    position: relative;
+    top: -0.75em;
+    height: 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    z-index: -1;
+}
+
+.orText
+{
+    font-family: "Helvetica";
+    margin: auto;
+    background-color: white;
+    width: 20%;
+    color: rgb(142, 149, 164);
+    font-weight: bold;
+}
+
+.joinFacebook
+{
+    background: url("./img/facebookLogo.png");  
+    background-repeat: no-repeat;
+    background-size: 16px;
+
+    margin: 15px auto;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    border: none;
+    padding-left: 26px;
+
+    height: 16px;
+    color: rgb(71, 89, 147);
+    cursor: pointer;
+}
+
+.noAccount, .noAccount > *
+{
+    font-size: 14px;
+}
+
+.noAccount a
+{
+    font-weight: bolder;
+    color: #0095f6;
+}
+
+.forgetPass
+{
+    margin: 10px 0px;
+    font-size: 12px;
+    color: rgb(71, 89, 147);
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.3rem 0;
+}
+
+.get-app
+{
+    font-size: 15px;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+
+.app-download {
+    height: 40px;
+    width: 140px;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/APlogo.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/GPlogo.png');
+}
+
+
+
+/* media queries */
+@media (max-width: 875px) {
+    .phoneShow {
+        display: none;
+    }
+
+    .instagram-wrapper
+    {
+        width: 350px;
+    }
+
+    .loginContainer
+    {
+        width:100%;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 100%;
+    }
+
+    .phoneShow {
+        display: none;
+    }
+
+    .loginContainer
+    {
+        width:100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
